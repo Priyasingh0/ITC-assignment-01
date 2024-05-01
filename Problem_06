@@ -1,6 +1,6 @@
 def FGI(Annual_profit, Current_conversion_rate, Improved_conversion_rate, Improvement_cost, Expected_project_life, i):
     n = (Annual_profit * (Improved_conversion_rate / Current_conversion_rate) - Annual_profit) * ((1 + i) ** Expected_project_life - 1) / i - Improvement_cost * (1 + i) ** Expected_project_life
- 
+    return n
 
 def TGI(Annual_profit, Current_conversion_rate, Improved_conversion_rate, Improvement_cost, Expected_project_life, i):
     return FGI(Annual_profit, Current_conversion_rate, Improved_conversion_rate, Improvement_cost, Expected_project_life, i) / (1 + i) ** Expected_project_life

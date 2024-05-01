@@ -8,6 +8,8 @@ def make_shake(choice):
         print("Making nut shake...")
     elif choice == "fruit":
         print("Making fruit shake...")
+    else:
+        print("Invalid choice of shake.")
 
 add_topping(2, 'sprinkles', 'hot fudge', 'whipped cream', 'crushed nuts')
 
